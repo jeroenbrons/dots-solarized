@@ -187,10 +187,10 @@ mode "$mode_gaps_outer" {
 
 ### POLYBAR
 exec /home/sparcie/.config/polybar/launch.sh
-
 ### ROFI
-bindsym $mod+space exec rofi -show run -config /home/sparcie/.config/rofi/config.rasi
-
+bindsym $mod+d exec rofi -show run -config /home/sparcie/.config/rofi/config.rasi
+##internet
+bindsym $mod+i exec firefox
 ### COMPOSITOR
 exec compton --daemon -b --config /home/sparcie/.config/compton.conf
 
