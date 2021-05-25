@@ -4,6 +4,7 @@ sudo apt update
 sudo apt install -y i3-gaps compton ranger rofi pcmanfm  neofetch dunst polybar
 cp .Xresources ~/
 cp -rfv dunst/*  ~/.config/dunst
+mkdir ~/.config/polybar/
 cp -rfv polybar/* ~/.config/polybar/
 cp -rfv pcmanfm/* ~/.config/pcmanfm
 cp -rfv neofetch/* ~/.config/neofetch
