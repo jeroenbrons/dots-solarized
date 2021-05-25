@@ -15,7 +15,7 @@ font pango:Inconsolata for Powerline 10
 floating_modifier $mod
 
 ### TERMINAL
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec tilix
 
 ### KILL WINDOW
 bindsym $mod+Shift+q kill
