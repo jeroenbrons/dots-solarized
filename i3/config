@@ -1,4 +1,4 @@
-set $mod Mod1
+set $mod Mod4
 
 set $workspace1 "1"
 set $workspace2 "2"
@@ -186,31 +186,26 @@ mode "$mode_gaps_outer" {
 }
 
 ### POLYBAR
-exec /home/mrtn/.config/polybar/launch.sh
+exec /home/sparcie/.config/polybar/launch.sh
 
 ### ROFI
-bindsym $mod+space exec rofi -show run -config /home/mrtn/.config/rofi/config.rasi
+bindsym $mod+space exec rofi -show run -config /home/sparcie/.config/rofi/config.rasi
 
 ### COMPOSITOR
-exec compton --daemon -b --config /home/mrtn/.config/compton.conf
+exec compton --daemon -b --config /home/sparcie/.config/compton.conf
 
 # pavucontrol (audio settings)
 bindsym $mod+p exec pavucontrol
 
 ### SCREENSHOT
-bindsym Print --release exec /home/mrtn/.config/i3/scripts/screenshot.sh 
+bindsym Print --release exec /home/sparcie/.config/i3/scripts/screenshot.sh 
 
 ### ALSA
-bindsym $mod+Prior exec /home/mrtn/.config/i3/scripts/volume.sh up
-bindsym $mod+Next exec /home/mrtn/.config/i3/scripts/volume.sh down
-
-### SPOTIFY
-bindsym $mod+Home exec spotifycli --next
-bindsym $mod+End exec spotifycli --prev
-bindsym $mod+Insert exec spotifycli --playpause
+bindsym $mod+Prior exec /home/sparcie/.config/i3/scripts/volume.sh up
+bindsym $mod+Next exec /home/sparcie/.config/i3/scripts/volume.sh down
 
 ### WALLPAPER
-exec_always feh --bg-scale /usr/share/wallpapers/firewatch.jpg
+exec_always feh --bg-scale /home/sparcie/Afbeeldingen/wallpaper.jpg
 
 ### FLOATING MODE FOR
 for_window [class="Pavucontrol"] floating enable
