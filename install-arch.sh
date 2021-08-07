@@ -1,4 +1,4 @@
-yay -Sy i3-gaps picom compton-conf-git ranger rofi pcmanfm  neofetch dunst polybar
+yay -Sy i3-gaps picom compton-conf-git ranger rofi pcmanfm  neofetch dunst polybar feh
 cp .Xresources ~/
 cp -rfv dunst/*  ~/.config/dunst
 mkdir ~/.config/polybar/
